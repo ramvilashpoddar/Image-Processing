@@ -1,4 +1,19 @@
-# Image Processing on FPGA Using Convolution Operations
+# UART
+An implementation of UART using verilog
 
-In this Verilog project, some simple Image processing operations are implemented such as Blur, Gaussian blur, Brightness control and Inversion operations. We undertook the task of standardizing RGB images to a resolution of 400x300 pixels. We directly stored the whole image file in Block RAM. Subsequently, we performed convolution operations on FPGA to apply various effects to the images. These operations were executed on an FPGA board, and the processed images were displayed on a monitor using the VGA standard, ensuring compatibility and seamless visualization. 
+
+This UART consists of four parts:
+
+Reciever.v - The part which recieves the Serial Signal
+
+Transmitter.v - The part which transmits the Serial Signal
+
+Baud_Rate_generator.v - The part that generates the specified Baud Rate of the communication
+
+FIFO.v - A custom FIFO that can be used to Store all the data elements before transmitting or after recieving
+
+UART.v - a small demostration connecting the RX and TX together
+
+test_bench.v - The test bench that I designed to test my UART module
+
 
